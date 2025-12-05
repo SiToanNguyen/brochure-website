@@ -57,7 +57,7 @@ With **Google Sheets**:
 - The user owns and controls all data directly.
 - Changes appear instantly on the website.
 
-For busy clinic owners, Google Sheets is the simplest, safest, and most reliable way to manage website content without any technical skills.
+For busy business owners, Google Sheets is the simplest, safest, and most reliable way to manage website content without any technical skills.
 
 ---
 
