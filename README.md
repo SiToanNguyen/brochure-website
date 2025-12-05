@@ -1,4 +1,4 @@
-# 🏥 Brochure Website – Easy No-Code Editing
+# Brochure Website – Easy No-Code Editing
 
 This is a lightweight and customizable website template designed for small businesses such as clinics, restaurants, or shops.
 
