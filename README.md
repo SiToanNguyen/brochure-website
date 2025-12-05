@@ -1,0 +1,57 @@
+# 🏥 Brochure Website – Easy No-Code Editing
+
+This is a lightweight and customizable website template designed for small businesses such as clinics, restaurants, or shops.
+
+The **core feature** of this project:
+
+> **All website content can be edited directly by the user through a simple Google Sheet — no coding, no technical knowledge, and no need to contact the developer.**
+
+---
+
+## 🚀 Features
+
+### ✅ 1. **No-Code Editing via Google Sheets**
+Every part of the website is editable through a spreadsheet. For example, for a doctor clinic:
+
+- Clinic name & tagline  
+- Doctor’s profile  
+- List of services  
+- Assistants / staff  
+- Opening hours  
+- Contact information  
+- Holiday dates  
+- Image links  
+
+If the user knows how to edit a Google Sheet, they already know how to edit the website.
+
+---
+
+## ⚙️ How It Works
+
+### **Website Frontend**
+- `index.html` (main site)
+- `script.js` (loads data)
+- TailwindCSS (via CDN)
+
+### **Google Sheet as CMS**
+A Google Apps Script converts the Google Sheet into a public JSON API.
+
+https://docs.google.com/spreadsheets/d/1Gtw1_VK2bbvvd4YjwduPQ-jgx4a8W_LopHeCtidQ3jQ/edit?usp=sharing
+
+
+Please check the script in Extension > Apps Script.
+
+---
+
+## Contributing
+
+This project is for viewing only.  
+If you'd like to make changes, feel free to clone the repository and modify it as you wish.
+
+---
+
+## License
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**.  
+You are free to use, share, and modify the code, but **not for commercial purposes**.  
+See the [LICENSE](LICENSE) file for more details.
