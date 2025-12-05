@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: #f8fafc;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6 shadow">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 id="clinic-title" class="text-4xl font-bold">Doctor's Clinic</h1>
+      <p id="clinic-tagline" class="opacity-80 mt-2">Loading...</p>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto py-12 px-4 space-y-16">
+
+    <!-- Doctor Section -->
+    <section id="doctor-section" class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Filled by JS -->
+    </section>
+
+    <!-- Services Section -->
+    <section id="services-section">
+      <h2 class="text-3xl font-bold mb-6">Services</h2>
+      <div id="services-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <!-- Assistants Section -->
+    <section id="assistants-section">
+      <h2 class="text-3xl font-bold mb-6">Our Team</h2>
+      <div id="assistants-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="p-6 bg-white shadow rounded-lg">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <div id="contact-details" class="space-y-2"></div>
+      <div id="map" class="mt-6"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 p-6 mt-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <p>&copy; <span id="year"></span> Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
