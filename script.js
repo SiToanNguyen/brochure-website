@@ -21,7 +21,7 @@ function formatPhone(p) {
     return p.startsWith("+") ? p : "+" + p;
 }
 
-// NEW — Better placeholders
+// Placeholders
 const DOCTOR_PLACEHOLDER =
   "https://api.dicebear.com/7.x/avataaars/svg?seed=Doctor";
 
