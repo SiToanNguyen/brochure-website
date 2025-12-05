@@ -8,9 +8,14 @@ The **core feature** of this project:
 
 ---
 
-## 🚀 Features
+### **Deployment on GitHub Pages**
+https://sitoannguyen.github.io/brochure-website/
 
-### ✅ 1. **No-Code Editing via Google Sheets**
+---
+
+## Features
+
+### 1. **No-Code Editing via Google Sheets**
 Every part of the website is editable through a spreadsheet. For example, for a doctor clinic:
 
 - Clinic name & tagline  
@@ -26,7 +31,7 @@ If the user knows how to edit a Google Sheet, they already know how to edit the 
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ### **Website Frontend**
 - `index.html` (main site)
@@ -43,7 +48,7 @@ Please check the script in Extension > Apps Script.
 
 ---
 
-### 🆚 Why Google Sheets Instead of WordPress or Facebook?
+### Why Google Sheets Instead of WordPress or Facebook?
 
 Most small businesses only need to update simple information — opening hours, services, staff, and contact details. Traditional CMS platforms like **WordPress** can be overwhelming with plugins, dashboards, themes, updates, and security issues. Social platforms like **Facebook Pages** are easy to post on, but they don’t allow clean control over layout or structured data.
 
