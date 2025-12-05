@@ -43,6 +43,24 @@ Please check the script in Extension > Apps Script.
 
 ---
 
+### 🆚 Why Google Sheets Instead of WordPress or Facebook?
+
+Most small businesses only need to update simple information — opening hours, services, staff, and contact details. Traditional CMS platforms like **WordPress** can be overwhelming with plugins, dashboards, themes, updates, and security issues. Social platforms like **Facebook Pages** are easy to post on, but they don’t allow clean control over layout or structured data.
+
+With **Google Sheets**:
+
+- Editing the website is as easy as updating a spreadsheet.
+- No login to a complicated CMS dashboard.
+- No risk of breaking layouts, plugins, or themes.
+- No need for backups — Google handles everything.
+- No ads, no clutter, no unexpected UI changes (unlike Facebook).
+- The user owns and controls all data directly.
+- Changes appear instantly on the website.
+
+For busy clinic owners, Google Sheets is the simplest, safest, and most reliable way to manage website content without any technical skills.
+
+---
+
 ## Contributing
 
 This project is for viewing only.  
