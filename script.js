@@ -15,13 +15,13 @@ function getImage(url, fallback) {
     return url;
 }
 
-// Helper function to format phone numbers
+// Add the '+' sign to phone numbers because can't write '+49' directly in Google Sheets
 function formatPhone(p) {
     if (!p) return "";
     return p.startsWith("+") ? p : "+" + p;
 }
 
-// Placeholders
+// Placeholders of photos
 const DOCTOR_PLACEHOLDER =
   "https://api.dicebear.com/7.x/avataaars/svg?seed=Doctor";
 
@@ -31,10 +31,30 @@ const ASSISTANT_PLACEHOLDER =
 const SERVICE_PLACEHOLDER =
   "https://api.dicebear.com/7.x/shapes/svg?seed=Medical+Service";
 
+// Function to safely apply background image with fallback
+  function applyBackgroundImage(url) {
+    if (!url || url.trim() === "") return;
+
+    const img = new Image();
+    img.src = url;
+
+    img.onload = () => {
+        document.body.style.background = `url('${url}') no-repeat center/cover`;
+    };
+
+    img.onerror = () => {
+        console.warn("Background image failed to load:", url);
+    };
+}
+
+// Fetch data from the Google Apps Script web app
 fetch(API_URL)
   .then(res => res.json())
   .then(data => {
     const info = data.clinicInfo;
+
+    // Apply background image
+    applyBackgroundImage(info.background_image_url);
 
     // Header
     document.getElementById("clinic-title").textContent =

@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="description" content="Clinic website powered by Google Sheets - update your clinic information without coding.">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clinic</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fade: "fadeIn 0.8s ease-out",
+          },
+          keyframes: {
+            fadeIn: {
+              "0%": { opacity: 0, transform: "translateY(20px)" },
+              "100%": { opacity: 1, transform: "translateY(0)" },
+            },
+          }
+        }
+      }
+    }
+  </script>
 
   <style>
     body {
-      background: #f8fafc;
+      background-color: #f8fafc; /* fallback */
     }
   </style>
 </head>
 <body class="text-gray-800">
 
   <!-- Header -->
-  <header class="bg-blue-600 text-white p-6 shadow">
+  <header class="bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-400 text-white py-20 shadow-lg">
     <div class="max-w-5xl mx-auto text-center">
-      <h1 id="clinic-title" class="text-4xl font-bold">Doctor's Clinic</h1>
-      <p id="clinic-tagline" class="opacity-80 mt-2">Loading...</p>
+      <h1 id="clinic-title" class="text-5xl font-extrabold tracking-tight drop-shadow">
+        Doctor's Clinic
+      </h1>
+      <p id="clinic-tagline" class="mt-4 text-xl opacity-90">
+        Loading...
+      </p>
     </div>
   </header>
 
   <main class="max-w-5xl mx-auto py-12 px-4 space-y-16">
 
     <!-- Doctor Section -->
-    <section id="doctor-section" class="flex flex-col md:flex-row items-center gap-8">
+    <section id="doctor-section" class="flex flex-col md:flex-row items-center gap-8 bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-8">
       <!-- Filled by JS -->
     </section>
 
     <!-- Services Section -->
-    <section id="services-section">
+    <section id="services-section" class="bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-8">
       <h2 class="text-3xl font-bold mb-6">Services</h2>
       <div id="services-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Filled by JS -->
@@ -38,7 +60,7 @@
     </section>
 
     <!-- Assistants Section -->
-    <section id="assistants-section">
+    <section id="assistants-section" class="bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-8">
       <h2 class="text-3xl font-bold mb-6">Our Team</h2>
       <div id="assistants-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Filled by JS -->
@@ -46,7 +68,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-section" class="p-6 bg-white shadow rounded-lg">
+    <section id="contact-section" class="bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-8">
       <h2 class="text-3xl font-bold mb-4">Contact</h2>
       <div id="contact-details" class="space-y-2"></div>
       <div id="map" class="mt-6"></div>
